@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+@import './normalize.scss';
+@import './variables.scss';
+
+@import '../components/header/header.scss';
+@import '../components/footer/footer.scss';
+
+div[class$='wrapper'] {
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  div[class$='wrapper'] {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  background-color: rgb(177, 177, 177);
+  padding: 20px;
+  // background-image: url(https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);
+
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    &__item {
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    &__picture {
+      width: 100%;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+  }
+}
+
+.grid__picture {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}

@@ -1,0 +1,64 @@
+.footer {
+  background-color: $bg-grey;
+  color: $font-black;
+  padding: 50px 0;
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1000px) {
+      & {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .contacts,
+    .socials,
+    .produce {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      border-bottom: 3px solid $font-black;
+      padding: 20px;
+      font-size: $font-footer-size;
+
+      @media screen and (min-width: 1000px) {
+        & {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .produce {
+      text-align: center;
+    }
+
+    .contacts {
+      &__mail,
+      &__phone {
+        @include footer-links;
+        &:hover {
+          color: $font-footer-hover;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        & {
+          justify-content: center;
+        }
+      }
+    }
+
+    .socials {
+      &__link {
+        @include footer-links;
+        &:hover {
+          color: $font-footer-hover;
+        }
+      }
+    }
+  }
+}
