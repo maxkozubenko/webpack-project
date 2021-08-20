@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+@import 'normalize';
+@import 'variables';
+
+div[class$='wrapper'] {
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  div[class$='wrapper'] {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+@import '../components/header/header.scss';
+@import '../components/introduce/introduce.scss';
+@import '../components/about/about.scss';
+@import '../components/skills/skills.scss';
+@import '../components/project/project.scss';
+@import '../components/footer/footer.scss';
+@import '../components/contacts/contacts.scss';
+@import '../components/map/map.scss';

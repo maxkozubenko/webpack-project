@@ -1,0 +1,25 @@
+$bg-white: #fff;
+$bg-black: #000;
+$bg-grey: rgb(202, 202, 202);
+$bg-grey-light: rgb(236, 236, 236);
+$font-black: #000;
+$font-white: #fff;
+$font-menu-hover: #7bd5ff;
+$font-footer-hover: #f08c8c;
+$max-width: 1200px;
+$font-menu-size: 1.5rem;
+$font-footer-size: 1.3rem;
+$font-logo: 'Style Script', cursive;
+$font-logo-size: 2rem;
+$font-title: 3rem;
+
+@mixin footer-links {
+  color: $font-black;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+@mixin btns-reset {
+  outline: none;
+  border: none;
+}

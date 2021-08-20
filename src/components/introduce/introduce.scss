@@ -1,0 +1,19 @@
+.introduce {
+  height: 500px;
+  background-image: url(https://zendenwebdesign.com/wp-content/uploads/2017/10/Top-7-Programing-Languages-for-Web-Development.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $font-white;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+
+  &__name {
+    font-size: $font-title;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+  }
+}

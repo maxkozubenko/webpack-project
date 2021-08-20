@@ -1,0 +1,19 @@
+{
+  "skills": [
+    {
+      "nameSkill": "Angular"
+    },
+    {
+      "nameSkill": "HTML & CSS"
+    },
+    {
+      "nameSkill": "JavaScript"
+    },
+    {
+      "nameSkill": "jQuery"
+    },
+    {
+      "nameSkill": "Bootstrap"
+    }
+  ]
+}
