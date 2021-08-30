@@ -25,32 +25,19 @@ div[class$='wrapper'] {
   background-color: rgb(177, 177, 177);
   padding: 20px;
   // background-image: url(https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);
-
-  &__item {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  @media screen and (min-width: 1000px) {
-    &__item {
-      flex-direction: row;
-      gap: 20px;
-    }
-
-    &__picture {
-      width: 100%;
-    }
-  }
-
-  &__picture {
-    width: 100%;
-  }
 }
 
-.grid__picture {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
+.item {
+  background-color: rgb(167, 167, 167);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  &_new {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(111, 142, 235);
+  }
 }

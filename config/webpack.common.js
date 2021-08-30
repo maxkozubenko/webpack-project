@@ -8,10 +8,10 @@ const paths = require('./paths')
 
 module.exports = {
   entry: {
-    index: [paths.src + '/index.js'],
-    contact: [paths.src + '/contacts.js'],
-    grid: [paths.src + '/js/grid.js'],
-    flex: [paths.src + '/js/flex.js'],
+    index: [paths.src + '/index.ts'],
+    contact: [paths.src + '/contacts.ts'],
+    grid: [paths.src + '/js/grid.ts'],
+    flex: [paths.src + '/js/flex.ts'],
   },
 
   output: {
@@ -66,6 +66,12 @@ module.exports = {
     rules: [
       { test: /\.js$/, use: ['babel-loader'] },
 
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+
       { test: /\.pug$/, loader: 'pug-loader' },
 
       { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
@@ -76,9 +82,10 @@ module.exports = {
 
   resolve: {
     modules: [paths.src, 'node_modules'],
-    extensions: ['.js', '.jsx', '.json'],
+    // extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
     alias: {
       '@': paths.src,
     },
   },
-}
+};

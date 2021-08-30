@@ -1,5 +1,7 @@
 const inputs = document.getElementsByTagName('input');
-const btnSubmit = document.querySelector('.contact-form__submit');
+const btnSubmit: HTMLButtonElement = document.querySelector(
+  '.contact-form__submit'
+);
 
 btnSubmit.disabled = true;
 console.log('here');

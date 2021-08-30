@@ -1,8 +1,14 @@
+import { HtmlTagObject } from 'html-webpack-plugin';
+
 console.log('Skills block');
 
 /* eslint-disable indent */
 const arrColors = ['red', 'blue', 'yellow', 'orange'];
 // let index = 0;
+
+interface ISkill {
+  nameSkill: string;
+}
 
 fetch('./story/skills.json')
   .then((response) => response.json())
@@ -10,7 +16,7 @@ fetch('./story/skills.json')
     console.log(json);
     setTimeout(() => {
       const skills = document.querySelector('.skills-block');
-      json.skills.forEach((element, i) => {
+      json.skills.forEach((element: ISkill, i: number) => {
         const selectorByColor = 'skills__item_' + arrColors[i];
         skills.insertAdjacentHTML(
           'beforeend',
@@ -20,7 +26,7 @@ fetch('./story/skills.json')
         );
       });
 
-      const loader = document.querySelector('.lds-spinner');
+      const loader: HTMLDivElement = document.querySelector('.lds-spinner');
       loader.style.display = 'none';
     }, 2000);
   });

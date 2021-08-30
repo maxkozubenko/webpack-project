@@ -1,0 +1,48 @@
+{
+  "technologies": [
+    {
+      "technology": "Angular",
+      "createdData": "Jun 21 2012 00:00:00 AM"
+    },
+    {
+      "technology": "React",
+      "createdData": "Mar 29 2013 00:00:00 AM"
+    },
+    {
+      "technology": "JavaScript",
+      "createdData": "Jan 1 1995 00:00:00 AM"
+    },
+    {
+      "technology": "Vue",
+      "createdData": "Jan 1 2014 00:00:00 AM"
+    },
+    {
+      "technology": "Bootstrap",
+      "createdData": "Aug 19 2011 00:00:00 AM"
+    },
+    {
+      "technology": "Angular",
+      "createdData": "Jun 21 2012 00:00:00 AM"
+    },
+    {
+      "technology": "React",
+      "createdData": "Mar 29 2013 00:00:00 AM"
+    },
+    {
+      "technology": "JavaScript",
+      "createdData": "Jan 1 1995 00:00:00 AM"
+    },
+    {
+      "technology": "Vue",
+      "createdData": "Jan 1 2014 00:00:00 AM"
+    },
+    {
+      "technology": "JavaScript",
+      "createdData": "Jan 1 1995 00:00:00 AM"
+    },
+    {
+      "technology": "Vue",
+      "createdData": "Jan 1 2014 00:00:00 AM"
+    }
+  ]
+}
